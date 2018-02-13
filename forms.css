@@ -1,0 +1,36 @@
+div#logincontainer{
+	width: 50%;
+	/*border: 1px dashed #63A621;*/
+	border: none;
+	padding: 25px;
+	margin: auto;
+	box-shadow: 0px 0px 20px #3F6915;
+}
+div.formheader{
+	color: #333333;
+	font-weight: bold;
+	background-color: #FAD028;
+	border: 0px;
+	padding: 5px;
+	width: 105%;
+	margin-left: -3.1%;
+	margin-right: -3.1%;
+	box-shadow: 0px 2px 5px #B29110;
+}
+form#loginform > div.formheader{
+	width: auto;
+	margin-left: -25px;
+	margin-right: -25px;
+}
+span.textoptions > input{
+	margin-bottom: 5px;
+}
+span.addtextbox{
+	color: #225522;
+	text-decoration: underline;
+}
+span.addtextbox:hover{
+	color: #779977;
+	text-decoration: underline;
+	cursor: pointer;
+}

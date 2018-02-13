@@ -1,0 +1,30 @@
+table#buttoncontainer{
+	margin: auto;
+	/*overflow: auto;*/
+	max-width: 70%;
+}
+div.button#favorite{
+	display: none;
+}
+div.button#fbshare{
+	display: none;
+	background-color: #3B5998;
+	border-color: #3B5998;
+}
+div.button#twshare{
+	display: none;
+	background-color: #55ACEE;
+	border-color: #55ACEE;
+}
+div.recipe{
+	border-color: #116622;
+	border-radius: 50px;
+	background-color: #FAD028;
+	margin: auto;
+	max-width: 70%;
+	text-align: center;
+	padding: 2%;
+}
+img.ramen{
+	max-width: 50%;
+}

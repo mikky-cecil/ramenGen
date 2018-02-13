@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+
+	<meta charset="UTF-8">
+	<title>What should I put in my Top Ramen?</title>
+
+	<script src="jquery-1.11.2.min.js"></script>
+	<script src="jquery.cookie.js"></script>
+	<script src="layout.js"></script>
+	<script src="addrecipe.js"></script>
+	<link rel=stylesheet href="layout.css">
+	<link rel=stylesheet href="forms.css">
+
+</head>
+
+<body>
+<div class="navbar">
+	<span id="logo"><a href="ramengen.html">Home</a></span>
+	<span id="loginsignup">Tell us what <i>you</i> put in your ramen! | <a href="account/signup.html">Sign Up</a> | <a href="account/login.html">Log In</a></span>
+	<span id="socialmedia"><div class="fb-like" data-href="http://web.engr.oregonstate.edu/~cecilma/WebDev/project/ramengen.html" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></div></span>
+</div><br><br>
+
+<table class="body">
+	<tr>
+		<th class="header">What do YOU put in YOUR Instant Ramen?</th>
+	</tr>
+	<tr>
+		<td class="content">
+
+			<form id="recipeform" action="addrecipe.php" method="POST">
+				<div class="formheader">Flavor</div><br>
+				What flavor of instant noodles do these ingredients work best in?<br>
+				<input type="radio" name="flavor" value="chicken">Chicken<br>
+				<input type="radio" name="flavor" value="beef">Beef<br>
+				<input type="radio" name="flavor" value="shrimp">Shrimp<br>
+				<input type="radio" name="flavor" value="oriental">Oriental<br>
+				<input type="radio" name="flavor" value="kimchi">Kimchi<br>
+				<input type="radio" name="flavor" value="spicy seafood">Spicy Seafood<br>
+				<input type="radio" name="flavor" value="other">Other 
+					<input type="text" name="otherflavor"></input>
+				<br><br>
+
+				<div class="formheader">Ingredients</div><br>
+				What ingredients do you put in?<br>
+				<span class="textoptions">
+					<input type="text" name="ingredient0"></input><br>
+				</span>
+				<span class="addtextbox">+ Add another</span><br><br>
+
+				<div class="formheader">Nutrition</div><br>
+				Do these toppings add a nutritious boost, or are they just tasty?<br><br><i>Example: Adding an egg adds some protein, so it could be considered nutritious. Adding some spices, on the other hand, might not make much of a difference in nutrition, but still taste good!</i><br><br>
+				<input type="radio" name="nut" value="true"> Yes
+				<input type="radio" name="nut" value="false"> No
+				<br><br>
+				
+				<div class="formheader">Price</div><br>
+				Are these ingredients fairly inexpensive?<br>
+				<input type="radio" name="cheap" value="true"> Yes
+				<input type="radio" name="cheap" value="false"> No
+				<br><br>
+
+				<div class="button" id="submitrecipe">Tell the world!</div>
+			</form>
+
+		</td>
+	</tr>
+</table>
+
+</body>
